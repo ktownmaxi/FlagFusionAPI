@@ -29,8 +29,8 @@ class Datastorage(db.Model):
     gameFinished = db.Column(db.Boolean, nullable=True)
 
 
-#with app.app_context():
-#    db.create_all()
+with app.app_context():
+    db.create_all()
 
 player_queue = queue.Queue()
 final_flags = []
