@@ -1,20 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="496914af-6c82-43df-90d2-6e26a1814baa" name="Changes" comment="" />
+    <list default="true" id="496914af-6c82-43df-90d2-6e26a1814baa" name="Changes" comment="- Added reqs file">
+      <change beforePath="$PROJECT_DIR$/.idea/FlagFusionAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FlagFusionAPI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instance/player_data.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ressources/countrynames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/countrynames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ktownmaxi&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ktownmaxi/FlagFusionAPI&quot;,
+    &quot;accountId&quot;: &quot;9a3053ee-74de-47fc-8d81-4343062d9dec&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2fredDOzhF1UFSzCuDjVs1uHMAj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.server_main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/ktown/Documents/Maximilian/FlagFusionAPI"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ktown\Documents\Maximilian\FlagFusionAPI" />
+      <recent name="C:\Users\ktown\Documents\Maximilian\FlagFusionAPI\ressources" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -32,6 +75,58 @@
       <option name="presentableId" value="Default" />
       <updated>1714563708919</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1714563802057</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714563802057</updated>
+    </task>
+    <task id="LOCAL-00002" summary="- Updated countrynames.txt">
+      <option name="closed" value="true" />
+      <created>1714828004993</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714828004993</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- Updated server_main.py for better compatibility with FlagFusion AP">
+      <option name="closed" value="true" />
+      <created>1714828057618</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714828057618</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- Added reqs file">
+      <option name="closed" value="true" />
+      <created>1714828639061</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714828639061</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="- Updated countrynames.txt" />
+    <MESSAGE value="- Updated server_main.py for better compatibility with FlagFusion AP" />
+    <MESSAGE value="- Added reqs file" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added reqs file" />
   </component>
 </project>

@@ -1,10 +1,8 @@
-import json
 import os
 import queue
 import random
 from glob import glob
 from io import BytesIO
-from typing import Tuple, Dict
 from zipfile import ZipFile
 
 from flask import Flask, request, send_file
@@ -39,8 +37,7 @@ final_flags = []
 class Matchmaking(Resource):
 
     def __init__(self):
-        self.matchmaking_status_args = reqparse.RequestParser()
-        self.matchmaking_status_args.add_argument("playerID", type=int, help="Player ID to identify Player")
+        pass
 
     def put(self):
         """
@@ -100,16 +97,19 @@ class Matchmaking(Resource):
     def patch(self):
         """
         Method for removing player from queue
-        :returns: {"success": bool}, int
+        :returns: String, int
         """
-        args = self.matchmaking_status_args.parse_args()
+        matchmaking_status_args = reqparse.RequestParser()
+        matchmaking_status_args.add_argument("playerID", type=int, help="Player ID to identify Player")
+
+        args = matchmaking_status_args.parse_args()
 
         try:
             player_queue.queue.remove(args["playerID"])
-            return "Successfully removed player from queue", 200
+            return {"message": "Successfully removed player from queue"}, 200
 
         except Exception:
-            return "Could not find player with this ID in queue", 400
+            return {"message": "Could not find player with this ID in queue"}, 400
 
     def getID(self):
         """
@@ -152,7 +152,7 @@ class CommunicationAPI(Resource):
             :raises anyError: if something goes wrong
         """
 
-        with open(os.path.join("ressources", "countrynames.txt"), 'r') as file:
+        with open(os.path.join(current_dir, "countrynames.txt"), 'r') as file:
             # Lies den gesamten Inhalt der Datei
             data = file.read()
         strings = data.split(';')
@@ -192,7 +192,6 @@ class CommunicationAPI(Resource):
 
         if args["id"]:
             player = Datastorage.query.filter_by(playerID=args["id"]).first()
-            print(player.playerScore)
         if player is not None:
             if args["score"]:
                 player.playerScore = args["score"]
@@ -221,11 +220,11 @@ class CommunicationAPI(Resource):
             if player is not None:
                 player.gameFinished = True
                 db.session.commit()
-                return "State successfully set", 200
+                return {"message": "State successfully set"}, 200
             else:
-                return "Player not found in DB", 500
+                return {"message": "Player not found in DB"}, 500
         else:
-            return "Content not able to indentify", 400
+            return {"message": "Content not able to indentify"}, 400
 
 
 class UpdateAPI(Resource):
@@ -256,7 +255,6 @@ class BackupFunctionAPI(Resource):
                 for file in glob(os.path.join(directory_path, '*.json')):
                     zf.write(file, os.path.basename(file))
             stream.seek(0)
-            print("sent")
             return send_file(
                 stream,
                 as_attachment=True,
@@ -281,4 +279,4 @@ api.add_resource(UpdateAPI, "/update")
 api.add_resource(BackupFunctionAPI, "/backup")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0")
