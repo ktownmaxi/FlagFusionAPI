@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="496914af-6c82-43df-90d2-6e26a1814baa" name="Changes" comment="- Added reqs file">
-      <change beforePath="$PROJECT_DIR$/.idea/FlagFusionAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FlagFusionAPI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="496914af-6c82-43df-90d2-6e26a1814baa" name="Changes" comment="- Made general improvments">
+      <change afterPath="$PROJECT_DIR$/instance/player_data.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instance/player_data.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ressources/countrynames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/countrynames.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,15 +40,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.server_main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/ktown/Documents/Maximilian/FlagFusionAPI"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.server_main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ktown/Documents/Maximilian/FlagFusionAPI&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ktown\Documents\Maximilian\FlagFusionAPI" />
@@ -107,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714828639061</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- Made general improvments">
+      <option name="closed" value="true" />
+      <created>1718441460401</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718441460401</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +131,7 @@
     <MESSAGE value="- Updated countrynames.txt" />
     <MESSAGE value="- Updated server_main.py for better compatibility with FlagFusion AP" />
     <MESSAGE value="- Added reqs file" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added reqs file" />
+    <MESSAGE value="- Made general improvments" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Made general improvments" />
   </component>
 </project>
